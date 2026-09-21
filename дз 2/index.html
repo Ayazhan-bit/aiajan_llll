@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Список задач</h1>
+        
+        <!-- Блок добавления задачи -->
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Введите новую задачу...">
+            <button id="addTaskBtn">Добавить</button>
+        </div>
+
+        <!-- Список задач -->
+        <ul id="taskList"></ul>
+
+        <!-- Сообщение, если список пуст -->
+        <p id="emptyMessage" class="empty-message">Список задач пустой</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
