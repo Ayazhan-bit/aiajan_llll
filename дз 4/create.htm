@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подать объявление</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <h1>Новое объявление</h1>
+      <a href="index.html" class="btn btn-secondary">← К списку</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-section form-page-container">
+      <form id="ad-form" novalidate>
+        
+        <div class="form-group">
+          <label for="title">Название товара / услуги *</label>
+          <input type="text" id="title" name="title" placeholder="Например: Игровой ноутбук Asus" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Описание *</label>
+          <textarea id="description" name="description" rows="4" placeholder="Укажите состояние, комплектацию и характеристики..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Цена (сом) *</label>
+          <input type="number" id="price" name="price" step="any" min="0" placeholder="25000" required>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Фотография (необязательно)</label>
+          <input type="file" id="image" name="image" accept="image/*">
+          
+          <!-- Контейнер для мгновенного предпросмотра -->
+          <div id="image-preview-wrapper" class="image-preview-wrapper hidden">
+            <img id="image-preview" src="" alt="Предпросмотр фото">
+            <button type="button" id="remove-image-btn" class="btn-remove">✕ Удалить фото</button>
+          </div>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn btn-primary full-width">Опубликовать объявление</button>
+        <div id="form-status" class="status-msg"></div>
+
+      </form>
+    </section>
+  </main>
+
+  <script src="create.js"></script>
+</body>
+</html>

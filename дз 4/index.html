@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доска объявлений</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <h1>Доска объявлений</h1>
+      <a href="create.html" class="btn btn-nav">+ Подать объявление</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="ads-section">
+      <div class="controls-bar">
+        <input type="text" id="search-input" placeholder="Поиск по названию или описанию...">
+        <button id="refresh-btn" class="btn btn-secondary">🔄 Обновить</button>
+      </div>
+
+      <div id="status-container"></div>
+      <div id="ads-list" class="ads-grid"></div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
